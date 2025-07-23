@@ -1,8 +1,9 @@
 import streamlit as st
 import numpy as np
-import joblib
+import pickle
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(f)
 
-model =joblib.load("performance_model.pkl")
 
 st.title("Students Performance Prediction")
 st.markdown("---")
