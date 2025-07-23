@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pickle
-with open('model.pkl', 'rb') as f:
+with open('performance_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 
